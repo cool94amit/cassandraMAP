@@ -52,7 +52,7 @@
   },
   "files": ["README.md", "LICENSE", "index.js", "lib/"],
   "jam": {
-    "main": "./lib/cassandraMAP.js",
+    "main": "index.js",
     "includes": ["README.md", "LICENSE", "lib/cassandraMAP.js", "lib/cassandraMAP.min.js"]
   },
   "volo": {
