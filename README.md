@@ -7,7 +7,7 @@
 - [Development Version](http://static.jousst.com/js/cassandraMAP-0.1.0.js) *(32 KB; uncompressed with comments)*
 - [Production Version](http://static.jousst.com/js/cassandraMAP-0.1.0.min.js) *(8 KB; compressed)*
 
-This code is based on [JSON 3](../bestiejs/json3), created by [bestiejs](../bestiejs).
+This code is based on [JSON 3](http://github.com/bestiejs/json3), created by [bestiejs](http://github.com/bestiejs).
 
 [Apache Cassandra](http://cassandra.apache.org/) is an open-source distributed database managment system designed to handle large amounts of data. Within its query language, [CQL](http://www.datastax.com/documentation/cql/3.1/cql/cql_using/about_cql_c.html), there is a [map](http://www.datastax.com/documentation/cql/3.0/cql/cql_using/use_map_t.html) data type, which is equivalent to a JavaScript object. In order to query a database with CQL, a JavaScript object must be encoded into a JSON-like string that uses single quotes instead of the JSON standard double quotes. **cassandraMAP** provides a reliable, yet simple, way to encode objects into CQL-compilant map strings and decode them back to objects.  
 
