@@ -2,7 +2,7 @@
 
 ![cassandraMAP Logo](http://s21.postimg.org/qvtt7xjqf/cassandra_MAP.png)
 
-**CassandraMAP** is a JavaScript implementation of Cassandra's Map type based on JSON3, compatible with a variety of platforms, including Internet Explorer 6, Opera 7, Safari 2, and Netscape 6. The current version is **0.1.2**.
+**CassandraMAP** is a JavaScript implementation of Cassandra's Map type based on JSON3, compatible with a variety of platforms, including Internet Explorer 6, Opera 7, Safari 2, and Netscape 6. The current version is **0.1.3**.
 
 - [Development Version](http://static.jousst.com/js/cassandraMAP-0.1.0.js) *(32 KB; uncompressed with comments)*
 - [Production Version](http://static.jousst.com/js/cassandraMAP-0.1.0.min.js) *(8 KB; compressed)*
