@@ -23,7 +23,7 @@ Portions of the date serialization code are adapted from the [`date-shim`](https
     <script>
       cassandraMAP.stringify({"key": "value"});
       // => "{'key':'value'}"
-      JSON.parse("{'key':'value'}");
+      cassandraMAP.parse("{'key':'value'}");
       // => {"key": "value"}
     </script>
 
@@ -60,7 +60,7 @@ To avoid issues with third-party scripts, **cassandraMAP is exported to the glob
 
 ## Known Incompatibilities
 
-* Attempting to serialize the `arguments` object may produce inconsistent results across environments due to specification version differences. As a workaround, please convert the `arguments` object to an array first: `JSON.stringify([].slice.call(arguments, 0))`.
+* Attempting to serialize the `arguments` object may produce inconsistent results across environments due to specification version differences. As a workaround, please convert the `arguments` object to an array first: `cassandraMAP.stringify([].slice.call(arguments, 0))`.
 
 ## Required Native Methods
 
