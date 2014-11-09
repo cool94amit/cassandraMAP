@@ -1,5 +1,5 @@
 {
-  "name": "cassandraMAP",
+  "name": "cassandra-map",
   "version": "0.1.0",
   "description": "A modern JSON implementation compatible with nearly all JavaScript platforms.",
   "homepage": "https://github.com/jcoc611/cassandraMAP",
@@ -63,7 +63,6 @@
       "index.html",
       "component.json",
       "bower.json",
-      "benchmark",
       "page",
       "test",
       "vendor"
