@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+/* cassandraMAP Builder | http://github.com/jcoc611/cassandraMAP | Based on: */
 /* JSON 3 Builder | https://bestiejs.github.io/json3 */
 var fs = require("fs"),
     https = require("https"),
@@ -218,7 +219,7 @@ getCompiler(function hasCompiler(error) {
     return;
   }
 
-  fs.readFile(path.join(__dirname, "lib", "json3.js"), "utf8", function readSource(error, source) {
+  fs.readFile(path.join(__dirname, "lib", "cassandraMAP.js"), "utf8", function readSource(error, source) {
     if (error) {
       console.log(error);
       return;
@@ -259,7 +260,7 @@ getCompiler(function hasCompiler(error) {
         // Extract the JSON 3 header and clean up the minified source.
         compressed = extractComments(source)[0] + '\n' + postprocessSource(compressed);
         // Write the compressed version to disk.
-        fs.writeFile(path.join(__dirname, "lib", "json3.min.js"), compressed, writeSource);
+        fs.writeFile(path.join(__dirname, "lib", "cassandraMAP.min.js"), compressed, writeSource);
       }
       // Checks the `gzip`-ped size of the compressed version.
       function writeSource(exception) {
@@ -390,7 +391,7 @@ function getCompiler(callback) {
   // Step three: download the Closure Compiler.
   function download() {
     var headers = {
-      "user-agent": util.format("JSON/%s", package.version)
+      "user-agent": util.format("CassandraMAP/%s", package.version)
     };
     if (eTag && hasCompiler) {
       headers["if-none-match"] = eTag;
@@ -500,7 +501,7 @@ function getCompiler(callback) {
       return callback(error);
     }
     if (!hasCompiler) {
-      return callback(new Error("The Closure Compiler is required to build JSON 3."));
+      return callback(new Error("The Closure Compiler is required to build cassandraMAP 3."));
     }
     callback();
   }

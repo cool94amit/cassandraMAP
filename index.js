@@ -1,1 +1,1 @@
-module.exports = require("./lib/json3");
+module.exports = require("./lib/cassandraMAP");

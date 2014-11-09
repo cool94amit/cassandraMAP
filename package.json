@@ -1,28 +1,24 @@
 {
-  "name": "json3",
-  "version": "3.3.2",
+  "name": "cassandraMAP",
+  "version": "0.1.0",
   "description": "A modern JSON implementation compatible with nearly all JavaScript platforms.",
-  "homepage": "https://bestiejs.github.io/json3",
-  "main": "./lib/json3",
-  "keywords": ["json", "spec", "ecma", "es5", "lexer", "parser", "stringify"],
+  "homepage": "https://github.com/jcoc611/cassandraMAP",
+  "main": "./lib/cassandraMAP",
+  "keywords": ["cassandra", "map", "json", "parser", "stringify"],
   "licenses": [{
     "type": "MIT",
     "url": "http://kit.mit-license.org/"
   }],
   "author": {
-    "name": "Kit Cambridge",
-    "email": "github@kitcambridge.be",
+    "name": "Juan Camilo Osorio",
+    "email": "jcoc611@gmail.com",
     "web": "http://kitcambridge.be/"
   },
   "maintainers": [{
-    "name": "Kit Cambridge",
-    "email": "github@kitcambridge.be",
+    "name": "Juan Camilo Osorio",
+    "email": "jcoc611@gmail.com",
     "web": "http://kitcambridge.be/"
-  }, {
-    "name": "Benjamin Tan",
-    "email": "demoneaux@gmail.com",
-    "web": "https://d10.github.io/"
-  }],
+  },],
   "contributors": [{
     "name": "Mangled Deutz",
     "email": "olivier@webitup.fr",
@@ -39,21 +35,25 @@
     "name": "Kiryl Yermakou",
     "email": "rma4ok@gmail.com",
     "web": "https://github.com/rma4ok"
+  },{
+    "name": "Juan Camilo Osorio",
+    "email": "jcoc611@gmail.com",
+    "web": "http://kitcambridge.be/"
   }],
   "bugs": {
-    "url": "https://github.com/bestiejs/json3/issues"
+    "url": "https://github.com/jcoc611/cassandraMAP/issues"
   },
   "scripts": {
     "test": "node test/test_*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bestiejs/json3.git"
+    "url": "git://github.com/jcoc611/cassandraMAP.git"
   },
-  "files": ["README.md", "LICENSE", "lib/json3.js", "lib/json3.min.js"],
+  "files": ["README.md", "LICENSE", "lib/cassandraMAP.js", "lib/cassandraMAP.min.js"],
   "jam": {
-    "main": "./lib/json3.js",
-    "includes": ["README.md", "LICENSE", "lib/json3.js", "lib/json3.min.js"]
+    "main": "./lib/cassandraMAP.js",
+    "includes": ["README.md", "LICENSE", "lib/cassandraMAP.js", "lib/cassandraMAP.min.js"]
   },
   "volo": {
     "type": "directory",

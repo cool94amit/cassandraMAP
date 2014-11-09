@@ -1,9 +1,9 @@
 {
-  "name": "json3",
-  "repo": "bestiejs/json3",
-  "version": "3.3.2",
-  "description": "A modern JSON implementation compatible with nearly all JavaScript platforms.",
+  "name": "cassandraMAP",
+  "repo": "jcoc611/cassandraMAP",
+  "version": "0.1.0",
+  "description": "A JavaScript implementation of Cassandra's Map type based on JSON3.",
   "license": "MIT",
-  "scripts": ["index.js", "lib/json3.js", "lib/json3.min.js"],
-  "keywords": ["json", "spec", "ecma", "es5", "lexer", "parser", "stringify"]
+  "scripts": ["index.js", "lib/cassandraMAP.js", "lib/cassandraMAP.min.js"],
+  "keywords": ["cassandra", "map", "json", "parser", "stringify"]
 }
