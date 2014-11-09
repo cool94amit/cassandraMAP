@@ -1,5 +1,5 @@
 {
-  "name": "cassandraMAP",
+  "name": "cassandra-map",
   "version": "0.1.0",
   "main": "lib/cassandraMAP.js",
   "repository": {
@@ -21,7 +21,7 @@
     "tests"
   ],
   "homepage": "https://github.com/jcoc611/cassandraMAP",
-  "description": "A modern JSON implementation compatible with nearly all JavaScript platforms",
+  "description": "A JavaScript implementation of Cassandra's Map type based on JSON3.",
   "keywords": ["cassandra", "map", "json", "parser", "stringify"],
   "authors": [
     "Juan Camilo Osorio <jcoc611@gmail.com>"
