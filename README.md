@@ -31,32 +31,48 @@ Portions of the date serialization code are adapted from the [`date-shim`](https
 
 Just like JSON 3, cassandraMAP is defined as an [anonymous module](https://github.com/amdjs/amdjs-api/wiki/AMD#define-function-) for compatibility with [RequireJS](http://requirejs.org/), [`curl.js`](https://github.com/cujojs/curl), and other asynchronous module loaders.
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.js"></script>
-    <script>
-      require({
-        "paths": {
-          "cassandraMAP": "./path/to/cassandraMAP"
-        }
-      }, ["cassandraMAP"], function (cassandraMAP) {
-        cassandraMAP.parse("[1, 2, 3]");
-        // => [1, 2, 3]
-      });
-    </script>
+```html
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.js"></script>
+<script>
+  require({
+    "paths": {
+      "cassandraMAP": "./path/to/cassandraMAP"
+    }
+  }, ["cassandraMAP"], function (cassandraMAP) {
+    cassandraMAP.parse("[1, 2, 3]");
+    // => [1, 2, 3]
+  });
+</script>
+```
 
 To avoid issues with third-party scripts, **cassandraMAP is exported to the global scope even when used with a module loader**.
 
 ## CommonJS Environments
 
-    var cassandraMAP = require("./path/to/cassandraMAP");
-    cassandraMAP.parse("[1, 2, 3]");
-    // => [1, 2, 3]
+```javascript
+var cassandraMAP = require("./path/to/cassandraMAP");
+cassandraMAP.parse("[1, 2, 3]");
+// => [1, 2, 3]
+```
+    
+## Node.js
+### Installation
+```shell
+$ npm install cassandra-map
+```
 
+### Usage
+```javascript
+var cassandraMAP = require("cassandra-map");
+cassandraMAP.stringify({"node":"works"});
+```
 ## JavaScript Engines
 
-    load("./path/to/cassandraMAP.js");
-    cassandraMAP.stringify({"Hello": 123, "Good-bye": 456}, ["Hello"], "\t");
-    // => "{\n\t'Hello': 123\n}"
-
+```javascript
+load("./path/to/cassandraMAP.js");
+cassandraMAP.stringify({"Hello": 123, "Good-bye": 456}, ["Hello"], "\t");
+// => "{\n\t'Hello': 123\n}"
+```
 
 ## Known Incompatibilities
 
