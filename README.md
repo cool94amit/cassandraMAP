@@ -19,13 +19,15 @@ Portions of the date serialization code are adapted from the [`date-shim`](https
 
 ## Web Browsers
 
-    <script src="./path/to/cassandraMAP.js"></script>
-    <script>
-      cassandraMAP.stringify({"key": "value"});
-      // => "{'key':'value'}"
-      cassandraMAP.parse("{'key':'value'}");
-      // => {"key": "value"}
-    </script>
+```html
+<script src="./path/to/cassandraMAP.js"></script>
+<script>
+  cassandraMAP.stringify({"key": "value"});
+  // => "{'key':'value'}"
+  cassandraMAP.parse("{'key':'value'}");
+  // => {"key": "value"}
+</script>
+```
 
 ### Asynchronous Module Loaders
 
