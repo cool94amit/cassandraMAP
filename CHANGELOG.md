@@ -1,6 +1,6 @@
 # cassandraMAP Changelog
 
-## 0.1.5
+## 0.1.6
 
 Loading type was changed to bind to exports on CommonJS environments.
 Additional bugs in Node.js where fixed.
