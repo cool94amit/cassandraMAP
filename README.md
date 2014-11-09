@@ -20,7 +20,7 @@ Portions of the date serialization code are adapted from the [`date-shim`](https
 ## Web Browsers
 
 ```html
-<script src="./path/to/cassandraMAP.js"></script>
+<script src="./path/to/cassandraMap.js"></script>
 <script>
   cassandraMAP.stringify({"key": "value"});
   // => "{'key':'value'}"
@@ -38,7 +38,7 @@ Just like JSON 3, cassandraMAP is defined as an [anonymous module](https://githu
 <script>
   require({
     "paths": {
-      "cassandraMAP": "./path/to/cassandraMAP"
+      "cassandraMAP": "./path/to/cassandraMap"
     }
   }, ["cassandraMAP"], function (cassandraMAP) {
     cassandraMAP.parse("[1, 2, 3]");
@@ -47,12 +47,10 @@ Just like JSON 3, cassandraMAP is defined as an [anonymous module](https://githu
 </script>
 ```
 
-To avoid issues with third-party scripts, **cassandraMAP is exported to the global scope even when used with a module loader**.
-
 ## CommonJS Environments
 
 ```javascript
-var cassandraMAP = require("./path/to/cassandraMAP");
+var cassandraMAP = require("./path/to/cassandraMap");
 cassandraMAP.parse("[1, 2, 3]");
 // => [1, 2, 3]
 ```
@@ -71,7 +69,7 @@ cassandraMAP.stringify({"node":"works"});
 ## JavaScript Engines
 
 ```javascript
-load("./path/to/cassandraMAP.js");
+load("./path/to/cassandraMap.js");
 cassandraMAP.stringify({"Hello": 123, "Good-bye": 456}, ["Hello"], "\t");
 // => "{\n\t'Hello': 123\n}"
 ```
