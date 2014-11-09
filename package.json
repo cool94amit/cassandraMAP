@@ -12,12 +12,12 @@
   "author": {
     "name": "Juan Camilo Osorio",
     "email": "jcoc611@gmail.com",
-    "web": "http://kitcambridge.be/"
+    "web": "http://github.com/jcoc611"
   },
   "maintainers": [{
     "name": "Juan Camilo Osorio",
     "email": "jcoc611@gmail.com",
-    "web": "http://kitcambridge.be/"
+    "web": "http://github.com/jcoc611"
   }],
   "contributors": [{
     "name": "Mangled Deutz",
@@ -50,7 +50,7 @@
     "type": "git",
     "url": "git://github.com/jcoc611/cassandraMAP.git"
   },
-  "files": ["README.md", "LICENSE", "lib/cassandraMAP.js", "lib/cassandraMAP.min.js"],
+  "files": ["README.md", "LICENSE", "index.js", "lib/"],
   "jam": {
     "main": "./lib/cassandraMAP.js",
     "includes": ["README.md", "LICENSE", "lib/cassandraMAP.js", "lib/cassandraMAP.min.js"]
