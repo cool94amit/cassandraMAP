@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "A modern JSON implementation compatible with nearly all JavaScript platforms.",
   "homepage": "https://github.com/jcoc611/cassandraMAP",
-  "main": "./lib/cassandraMAP",
+  "main": "index.js",
   "keywords": ["cassandra", "map", "json", "parser", "stringify"],
   "licenses": [{
     "type": "MIT",
