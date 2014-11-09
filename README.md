@@ -4,8 +4,8 @@
 
 **CassandraMAP** is a JavaScript implementation of Cassandra's Map type based on JSON3, compatible with a variety of platforms, including Internet Explorer 6, Opera 7, Safari 2, and Netscape 6. The current version is **0.1.0**.
 
-- [Development Version](http://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.js) *(43 KB; uncompressed with comments)*
-- [Production Version](http://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js) *(3.5 KB; compressed and `gzip`-ped)*
+- [Development Version](http://static.jousst.com/js/cassandraMAP-0.1.0.js) *(32 KB; uncompressed with comments)*
+- [Production Version](http://static.jousst.com/js/cassandraMAP-0.1.0.min.js) *(8 KB; compressed)*
 
 This code is based on [JSON 3](../bestiejs/json3), created by [bestiejs](../bestiejs).
 
