@@ -1,1 +1,1 @@
-module.exports = require("./lib/cassandraMAP");
+module.exports = require("./lib/cassandraMap");
