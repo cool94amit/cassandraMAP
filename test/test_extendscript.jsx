@@ -6,10 +6,10 @@ function main() {
   #include "../vendor/newton.js"
 
   exports = this.JSON = {};
-  #include "../lib/json3.js"
+  #include "../lib/cassandraMAP.js"
 
   try {
-    #include "./test_json3.js"
+    #include "./test_cassandraMAP.js"
   } catch (exception) {
     $.bp();
     print(exception.source.split('\n')[exception.line - 1] + '\n' + exception);

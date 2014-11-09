@@ -1,10 +1,10 @@
 {
-  "name": "json3",
-  "version": "3.3.2",
-  "main": "lib/json3.js",
+  "name": "cassandraMAP",
+  "version": "0.1.0",
+  "main": "lib/cassandraMAP.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bestiejs/json3.git"
+    "url": "git://github.com/jcoc611/cassandraMAP.git"
   },
   "ignore": [
     ".*",
@@ -20,19 +20,11 @@
     "vendor",
     "tests"
   ],
-  "homepage": "https://github.com/bestiejs/json3",
+  "homepage": "https://github.com/jcoc611/cassandraMAP",
   "description": "A modern JSON implementation compatible with nearly all JavaScript platforms",
-  "keywords": [
-    "json",
-    "spec",
-    "ecma",
-    "es5",
-    "lexer",
-    "parser",
-    "stringify"
-  ],
+  "keywords": ["cassandra", "map", "json", "parser", "stringify"],
   "authors": [
-    "Kit Cambridge <github@kitcambridge.be>"
+    "Juan Camilo Osorio <jcoc611@gmail.com>"
   ],
   "license": "MIT"
 }
