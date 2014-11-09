@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>JSON 3 Unit Tests</title>
+    <title>cassandraMAP Unit Tests</title>
     <link rel="stylesheet" href="../vendor/newton.css" media="screen">
     <script src="../vendor/spec.js"></script>
     <script src="../vendor/newton.js"></script>
@@ -33,35 +33,14 @@
         return;
       }
 
-      libraryPath = "../lib/json3" + (Spec.hasKey(queryParams, "minified") ? ".min" : "");
+      libraryPath = "../lib/cassandraMAP" + (Spec.hasKey(queryParams, "minified") ? ".min" : "");
 
-      var previousJSON = root.JSON;
-      var previousJSON3 = root.JSON3 = {};
-
-      addNoConflictTest = function (testSuite) {
-        testSuite.addTest("`noConflict`", function () {
-          var currentJSON3 = root.JSON3;
-          this.notStrictEqual(currentJSON3, previousJSON3, "JSON 3 should overwrite the previous value of the `JSON3` object");
-
-          var JSON3 = currentJSON3.noConflict();
-          this.strictEqual(root.JSON, previousJSON, "`noConflict` should restore the previous value of the `JSON` object");
-          this.strictEqual(currentJSON3, JSON3, "`noConflict` should return the `JSON3` object");
-          this.strictEqual(root.JSON3, previousJSON3, "`noConflict` should restore the previous value of the `JSON3` object");
-
-          root.JSON3 = {};
-          var noConflictTwice = currentJSON3.noConflict();
-          this.strictEqual(noConflictTwice, JSON3, "`noConflict` should return the `JSON3` object when invoked multiple times");
-          this.notStrictEqual(root.JSON3, previousJSON3, "`noConflict` should not restore `JSON` and `JSON3` when invoked more than once");
-
-          root.JSON3 = JSON3;
-          this.done(6);
-        });
-      };
+      var newCassandraMap = root.cassandraMAP;
 
       isAMD = typeof require == "function" && typeof define == "function";
       if (!isAMD) {
         document.write('<script src="' + libraryPath + '.js"><\/script>');
-        document.write('<script src="test_json3.js"><\/script>');
+        document.write('<script src="test_cassandraMAP.js"><\/script>');
       }
     }(this));
     </script>
@@ -86,18 +65,16 @@
           },
           // Thwart aggressive resource caching. RequireJS only.
           "urlArgs": "async=" + (+new Date())
-        }, ["json", "test_json3"], function (JSON3, testSuite) {
+        }, ["json", "test_cassandraMAP"], function (cassandraMAP, testSuite) {
           testSuite.addTest("Asynchronous Module Definition", function (test) {
-            test.equal(root.JSON3, JSON3, "The global `JSON3` object should be defined even if JSON 3 is loaded as a module");
-            test.equal(JSON3.stringify(1), "1", "JSON 3 should be exported as an asynchronous module");
+            test.equal(cassandraMAP.stringify(1), "1", "JSON 3 should be exported as an asynchronous module");
             test.done(2);
           });
           addNoConflictTest(testSuite);
           testSuite.run();
         });
       } else {
-        var testSuite = root.JSON3.testSuite;
-        addNoConflictTest(testSuite);
+        var testSuite = root.cassandraMAP.testSuite;
         testSuite.run();
       }
     }(this));
